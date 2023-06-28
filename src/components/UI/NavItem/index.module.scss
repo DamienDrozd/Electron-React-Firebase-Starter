@@ -1,0 +1,40 @@
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: 0.3s all;
+
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    &__primary {
+        background: #E7414D;
+        color: white;
+        border: 1px solid #E7414D;
+        border-radius: 30px;
+
+        &:hover {
+            background: white;
+            border: 1px solid #E7414D;
+            color: #E7414D;
+        }
+    }
+
+    &__secondary {
+        background: white;
+        border: 1px solid black;
+
+        &:hover {
+            background: black;
+            color: white;
+        }
+    }
+}
